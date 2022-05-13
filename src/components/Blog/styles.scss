@@ -1,0 +1,10 @@
+.blog-container {
+    .blog-header {
+        margin: $margin-large 0 $margin-large;
+
+        color: $light-1;
+        font-weight: $font-weight-regular;
+        font-size: $font-large * 2;
+        text-align: left;
+    }
+}
