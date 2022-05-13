@@ -13,7 +13,7 @@ const Bio: React.FC = () => {
             {bio.companies.map((i) => {
               const fullClassname = `box ${i.size || ""}`;
               return (
-                <div className={fullClassname}>
+                <div className={fullClassname} key={`${i.companyName}`}>
                   <div className="dot"></div>
                   <span className="period">{i.initialPeriod}</span>
                   <a
@@ -31,8 +31,8 @@ const Bio: React.FC = () => {
           </div>
         </div>
         <div className="bio-description">
-          {bio.bioDescription.map((i) => (
-            <p>{i}</p>
+          {bio.bioDescription.map((i, index) => (
+            <p key={`${index}`}>{i}</p>
           ))}
         </div>
       </div>
