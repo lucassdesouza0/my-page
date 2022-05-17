@@ -4,8 +4,8 @@ import Menu from "components/Menu";
 
 const Header: React.FC = () => {
   return (
-    <header className="header-container">
-      <h1>Lucas Santos</h1>
+    <header className="container mx-auto flex flex-row my-8">
+      <h1 className="basis-1/2">Lucas Santos</h1>
       <Menu />
     </header>
   );

@@ -6,7 +6,7 @@ import Blog from "../src/components/Blog";
 
 const Home: NextPage = () => {
   return (
-    <div className="body-container">
+    <div className="container mx-auto px-4">
       <Header />
       {/* <h4>EM CONSTRUÇÃO</h4>
       <hr />
